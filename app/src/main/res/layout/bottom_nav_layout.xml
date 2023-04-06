@@ -7,23 +7,21 @@
     tools:context=".BottomNavActivity">
 
     <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/idBottomBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/idBottomBar"
-        app:navigationIcon="@drawable/baseline_menu"
-        app:menu="@menu/menu_principal"
         android:layout_gravity="bottom"
-        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
-        />
+        app:menu="@menu/menu_principal"
+        app:navigationIcon="@drawable/baseline_menu" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idFAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="Floating Action Button"
         android:src="@drawable/baseline_add"
-        android:id="@+id/idFAB"
-        app:layout_anchor="@id/idBottomBar"
-        />
-
-
+        app:layout_anchor="@id/idBottomBar" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

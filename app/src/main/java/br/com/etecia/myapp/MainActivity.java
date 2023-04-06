@@ -3,6 +3,7 @@ package br.com.etecia.myapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,9 +38,11 @@ public class MainActivity extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.mFavorito:
-                        Toast.makeText(getApplicationContext(),
-                                "Cliquei Favorito",
-                                Toast.LENGTH_SHORT).show();
+
+                        //Abrindo a janela do BottomBar
+                        startActivity(new Intent(getApplicationContext(),
+                                BottomNavActivity.class));
+
                         break;
                     case R.id.mCompartilhar:
                         Toast.makeText(getApplicationContext(),
