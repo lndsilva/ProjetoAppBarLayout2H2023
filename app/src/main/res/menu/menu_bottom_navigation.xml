@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mNavFav"
+        android:icon="@drawable/baseline_favorite"
+        android:title="Favorite" />
+    <item
+        android:id="@+id/mNavMusic"
+        android:icon="@drawable/baseline_music_note"
+        android:title="Music" />
+    <item
+        android:id="@+id/mNavPlaces"
+        android:icon="@drawable/baseline_place"
+        android:title="Places" />
+    <item
+        android:id="@+id/mNavNews"
+        android:icon="@drawable/baseline_newspaper"
+        android:title="News" />
+
+
+</menu>
